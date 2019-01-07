@@ -1,0 +1,50 @@
+mixin welcome(params)
+	+screen({ slideIndex: true }).screen-border--bottom.bg-gray-1.d-flex.align-items-center
+		.hero-card.container.align-items-center.py-4
+			.hero-card_image.hero-card_item.px-2
+				img(src="images/logo-large.png").mt-md-0.mt-4.mb-4.mx-auto
+				p.mx-md-4.lead.text-center ConAx unify communication space and optimize digital landscape across your research activities to promote data-driven science toward innovation.
+				div.text-center.mt-4.mb-4.mb-sm-0
+					a(href="#").c-btn.c-btn-round.c-btn-animated Request Demo ConAx
+			.hero-card_text.hero-card_item.py-4.px-2.pl-md-5
+				img(src="images/logo-text.png").mb-4.mx-auto.d-block
+				+sign-form
+				+social.mt-4
+	.slides
+		+screen({ slideIndex: false })#slide-communication.slide.screen-border--bottom.bg-gray-1.d-flex.align-items-center
+			.hero-card.container.align-items-center.flex-sm-row-reverse.py-4
+				.hero-card_text.hero-card_item.px-2
+					img(src="images/logo-inline.png").mb-5
+					h2.h2.text-uppercase.font-700.mb-4 Communication
+					h5.h5.font-600.text-curious-blue.mb-4 ConAx make a new creative network to promote Open Innovation on the Data-Driven Science principles
+					p.mb-2 ConAx connects the multi-modal data channels and third-party services to advanced computing facilities through powerful networking and research expertise.
+					p.mb-4 Integrates different levels of communication at all stages of the creation of scientific knowledge and promote research data content through open knowledge frameworks.
+					p.text-sm-center.text-md-left
+						a(href="#").c-btn.c-btn-round.c-btn-animated.mb-4 Discover ConAx Channels
+				.hero-card_image.hero-card_item.hero-card_image--stretch.px-2
+					img(src="images/communication.png").mx-auto.d-block
+		+screen({ slideIndex: false })#slide-collaboration.slide.screen-border--bottom.bg-gray-1.d-flex.align-items-center
+			.hero-card.container.align-items-center.py-4
+				.hero-card_text.hero-card_item.px-2
+					img(src="images/logo-inline.png").mb-5
+					h2.h2.text-uppercase.font-700.mb-4 Collaboration
+					h5.h5.font-600.text-curious-blue.mb-4 СonAx intensifies knowledge exchange toward Data-Driven Innovation by providing open knowledge networking
+					p.mb-4 Optimize connections/integrations and tools/activities structures through integration your multichannel communication and easier your way to collaboration. Unify Open Science Infrastructure as a tools for better collaboration, better data manipulation, reproduction and sharing.
+					p.text-sm-center.text-md-left
+						a(href="#").c-btn.c-btn-round.c-btn-animated.mb-4 Discover Networking
+				.hero-card_image.hero-card_item.hero-card_image--stretch.px-2
+					img(src="images/collaboration.png").mx-auto.d-block
+		+screen({ slideIndex: false })#slide-participation.slide.screen-border--bottom.bg-gray-1.d-flex.align-items-center
+			.hero-card.container.align-items-center.flex-sm-row-reverse.py-4
+				.hero-card_text.hero-card_item.px-2
+					img(src="images/logo-inline.png").mb-5
+					h2.h2.text-uppercase.font-700.mb-4 Participation
+					h5.h5.font-600.text-curious-blue.mb-4 ConAx is Mission- oriented and Impact- focused solution for Private and Institutional stakeholders
+					p.mb-4 Analytics from your activities and targeting at tools across your project minimize your mistake – and multiplies your right decisions. Make data-driven decisions at all project stages and levels of cooperation.
+					p.text-sm-center.text-md-left
+						a(href="#").c-btn.c-btn-round.c-btn-animated.mb-4 Discover ConAx Tool
+				.hero-card_image.hero-card_item.hero-card_image--stretch.px-2
+					img(src="images/participation.png").mx-auto.d-block
+	+footer
+	+social#social-float.social-float.social-vertical.hide
+	#scroll-to-top.scroll-to-top-action.hide

@@ -1,0 +1,45 @@
+{
+  "name": "conax-web",
+  "private": true,
+  "description": "ConAx website project",
+  "scripts": {
+    "start": "gulp serve",
+    "build": "NODE_ENV=production gulp build"
+  },
+  "keywords": [
+    "ConAx"
+  ],
+  "author": "ConAx dev",
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "babel-loader": "^8.0.4",
+    "browser-sync": "^2.26.3",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.8",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-jshint": "^2.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "jshint": "^2.9.7",
+    "mkdirp-promise": "^5.0.1",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-preset-env": "^6.5.0",
+    "pug-include-glob": "^0.3.3",
+    "scroll": "^2.0.3",
+    "scroll-doc": "^0.2.1",
+    "webpack": "^4.28.2",
+    "webpack-stream": "^5.2.1"
+  }
+}

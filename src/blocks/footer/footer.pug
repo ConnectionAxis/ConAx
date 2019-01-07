@@ -1,0 +1,26 @@
+mixin footer
+  footer.footer&attributes(attributes)
+    .footer-wrapper
+      .container
+        .row.align-items-end
+          .col-md-4.col-sm-12.text-sm-center.text-md-left.pr-md-0
+            div.mb-2
+              img(src="images/logo-text.png")
+            a(href="#").c-btn.c-btn-round.c-btn-animated Request Demo ConAx
+          .col-md-5.col-sm-12.pt-4
+            .row
+              .col-6
+                div.text-sm-right.text-md-left
+                  a(href="#").footer-link About ConAx
+                div.text-sm-right.text-md-left
+                  a(href="#").footer-link Privacy Policy
+              .col-6
+                div
+                  a(href="#").footer-link Terms of Use
+                div
+                  a(href="#").footer-link Contact Us
+          .col-md-3.col-sm-12.pt-4.pb-md-2
+            +social
+
+    .footer-copy.text-center.py-3
+      | Copyright © 2018 ConAx

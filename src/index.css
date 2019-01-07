@@ -1,0 +1,4 @@
+@import "normalize.css";
+@import "./styles/bootstrap.css";
+@import "./styles/*.css";
+@import "./blocks/**/*.css";

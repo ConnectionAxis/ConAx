@@ -1,0 +1,56 @@
+:root {
+  --social-padding: 0.5rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.social-icon {
+  transition: transform var(--duration);
+  will-change: transform;
+}
+
+.social-item:hover .social-icon {
+  transform: scale(1.1);
+}
+
+.social-item:active .social-icon {
+  transform: scale(1);
+}
+
+.social-vertical .social-item {
+	padding: 0.5rem 0;
+	display: block;
+}
+
+.social-float {
+	display: block;
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  opacity: 1;
+
+  -webkit-transition: all 0.8s ease-in;
+  -moz-transition: all 0.8s ease-in;
+  -ms-transition: all 0.8s ease-in;
+  -o-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
+}
+
+@media (min-width: 768px) {
+	.social-float {
+		right: 30px;
+	}
+}
+
+.social-float.hide {
+	opacity: 0;
+}

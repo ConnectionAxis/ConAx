@@ -1,0 +1,52 @@
+.c-btn {
+  display: inline-block;
+  padding: 0.7rem 0.5rem;
+  border: none;
+  line-height: 1;
+  font-weight: 700;
+  font-family: var(--font-primary);
+  color: var(--white);
+  background-color: var(--curious-blue);
+  transition: background-color var(--duration);
+  will-change: background-color;
+  cursor: pointer;
+  outline: 0 !important;
+}
+
+.c-btn.c-btn-lg {
+  padding: 1rem 0.9rem;
+  font-size: 1rem;
+}
+
+.c-btn.c-btn-round {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 2rem;
+}
+
+.c-btn.c-btn-animated {
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.c-btn:hover {
+  background-color: color-mod(var(--curious-blue) l(+10%));
+}
+
+.c-btn:active {
+  background-color: color-mod(var(--curious-blue) l(-5%));
+  transition: none;
+}
+
+.c-btn.c-btn-animated:hover {
+  color: var(--curious-blue);
+  background-color: var(--white);
+}
+
+a.c-btn:hover {
+  text-decoration: none;
+  color: var(--white);
+}

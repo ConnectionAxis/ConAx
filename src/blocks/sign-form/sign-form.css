@@ -1,0 +1,35 @@
+.sign-form input.form-control {
+	background: transparent;
+	outline: 0;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid var(--silver);
+	border-radius: 0;
+}
+
+.sign-form input.form-control:focus,
+.sign-form input.form-control:active {
+	box-shadow: none !important;
+	outline: 0 !important;
+	-webkit-appearance: none;
+	border-bottom: 1px solid var(--curious-blue);
+}
+
+.sign-form .form-group {
+	position: relative;
+}
+
+.sign-form .form-group label.input-label {
+	position: absolute;
+	color: var(--curious-blue);
+	right: 0;
+	top: 50%;
+	margin: 0;
+	transform: translate(0, -50%);
+}
+
+.sign-form .form-group.hide,
+.sign-form .form-group label.hide {
+	display: none;
+}

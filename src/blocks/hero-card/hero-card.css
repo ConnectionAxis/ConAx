@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+	.hero-card {
+		display: flex;
+	}
+
+	.hero-card_item {
+		width: 50%;
+	}
+}
+
+.hero-card_image img {
+	display: block;
+}
+
+.hero-card_image--stretch img {
+	width: 100%;
+}

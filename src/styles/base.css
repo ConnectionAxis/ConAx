@@ -1,0 +1,17 @@
+:root {
+	--font-serif: "Open Sans", sans-serif;
+	--gallery: #eee;
+	--cobalt: #004ab7;
+	--curious-blue: #22aedf;
+	--rolling-stone: #70777c;
+	--silver: #c4c4c4;
+	--alto: #dbdbdb;
+	--alto-2: #8c9cad;
+	--air: #46BDE7;
+	--gray-1: #F9F9F9;
+}
+
+html {
+	font-family: var(--font-serif);
+	font-weight: 400;
+}
