@@ -12,17 +12,14 @@ function wReady(e) {
 	    e => (e.preventDefault(), onSlideNav(e))
 	);
 	addListener(
-		document, 'click', '#scroll-to-top',
-	    e => (e.preventDefault(), onScrollToTop(e))
-	);
-	addListener(
 		document.querySelector('#conax-sign'), 'click', '#conax-sign-submit',
-	    e => (e.preventDefault(), onSignSubmit(e))
+	    e => (e.stopPropagation(), onSignSubmit(e))
 	);
 	addListener(
 		document.querySelector('#conax-sign'), 'keyup', '.conax-sign-input',
 	    e => (e.preventDefault(), onSignInputChange(e))
 	);
+  document.getElementById('scroll-to-top').addEventListener('click', onScrollToTop);
 	document.addEventListener('scroll', onScroll);
 }
 

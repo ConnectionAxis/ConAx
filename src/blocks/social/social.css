@@ -1,5 +1,8 @@
 :root {
   --social-padding: 0.5rem;
+  --social-dimension: 42px;
+  --social-dimension--scale: 46px;
+  --social-color: #75880d;
 }
 
 .social {
@@ -8,8 +11,8 @@
 }
 
 .social-item {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
 }
 
 .social-icon {
@@ -17,23 +20,22 @@
   will-change: transform;
 }
 
-.social-item:hover .social-icon {
-  transform: scale(1.1);
-}
+svg.social-icon {
+  fill: var(--social-color);
 
-.social-item:active .social-icon {
-  transform: scale(1);
+  width: var(--social-dimension);
+  height: var(--social-dimension);
 }
 
 .social-vertical .social-item {
-	padding: 0.5rem 0;
+	padding: 0.2rem 0;
 	display: block;
 }
 
 .social-float {
 	display: block;
   position: fixed;
-  right: 10px;
+  right: 7px;
   top: 50%;
   transform: translate(0, -50%);
   opacity: 1;
@@ -47,7 +49,7 @@
 
 @media (min-width: 768px) {
 	.social-float {
-		right: 30px;
+		left: 30px;
 	}
 }
 

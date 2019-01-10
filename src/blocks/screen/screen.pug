@@ -1,9 +1,3 @@
 mixin screen(params)
 	.screen&attributes(attributes)
 		block
-		if params.slideIndex
-			.slide-index
-				ul.slide-index-nav.list-inline
-					li.list-inline-item.px-3: a.slide-index-item(href="#slide-communication") Communication
-					li.list-inline-item.px-3: a.slide-index-item(href="#slide-collaboration") Collaboration
-					li.list-inline-item.px-3: a.slide-index-item(href="#slide-participation") Participation
