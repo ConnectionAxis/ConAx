@@ -33,7 +33,9 @@ svg.social-icon {
 }
 
 .social-float {
-	display: block;
+	display: flex;
+  flex-direction: column;
+  width: var(--social-dimension);
   position: fixed;
   right: 7px;
   top: 50%;

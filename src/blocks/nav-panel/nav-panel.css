@@ -1,0 +1,31 @@
+.nav-panel {
+	position: fixed;
+	height: auto;
+	width: 100%;
+	top: 0;
+	border-bottom: 2px solid var(--silver);
+	z-index: 1;
+	background-color: var(--white);
+	opacity: 1;
+
+  -webkit-transition: all 0.8s ease-in;
+  -moz-transition: all 0.8s ease-in;
+  -ms-transition: all 0.8s ease-in;
+  -o-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
+}
+
+.nav-panel.hide {
+	height: 0;
+	opacity: 0;
+}
+
+.nav-panel .c-btn {
+	padding: 0.7rem 0.9rem;
+}
+
+@media (min-width: 768px) {
+	.nav-panel .c-btn {
+		padding: var(--c-btn-padding-y) var(--c-btn-round-padding-x);
+	}
+}

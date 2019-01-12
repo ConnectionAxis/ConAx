@@ -1,0 +1,14 @@
+mixin nav-panel(params)
+	.nav-panel.hide&attributes(attributes)
+		.py-3.px-3.px-sm-4
+			.d-flex.align-items-center
+				.flex-fill
+					a(href="#")
+						+logo({ type: "logo+text", width: 130 }).d-md-inline-block.d-none
+						+logo({ type: "logo", width: 40 }).d-inline-block.d-md-none
+				.flex-fill.text-right
+					a(href="#").c-btn.c-btn-round.mr-2.mr-md-3 About
+						span.d-none.d-sm-inline.pl-1 ConAx
+					a(href="#").c-btn.c-btn-round
+						span.d-none.d-sm-inline.pr-1 Request
+						| Demo ConAx

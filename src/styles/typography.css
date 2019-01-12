@@ -9,7 +9,3 @@
 
 .text-sm-center { text-align: center; }
 .text-sm-right { text-align: right; }
-
-@include media-breakpoint-up(md) {
-	.text-md-left { text-align: left; }
-}

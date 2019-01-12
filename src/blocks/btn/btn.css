@@ -1,6 +1,16 @@
+:root {
+  --c-btn-padding-y: 0.7rem;
+  --c-btn-padding-x: 0.5rem;
+
+  --c-btn-round-padding-x: 1.5rem;
+
+  --c-btn-lg-padding-y: 1rem;
+  --c-btn-lg-padding-x: 0.9rem;
+}
+
 .c-btn {
   display: inline-block;
-  padding: 0.7rem 0.5rem;
+  padding: var(--c-btn-padding-y) var(--c-btn-padding-x);
   border: none;
   line-height: 1;
   font-weight: 700;
@@ -14,13 +24,13 @@
 }
 
 .c-btn.c-btn-lg {
-  padding: 1rem 0.9rem;
+  padding: var(--c-btn-lg-padding-y) var(--c-btn-lg-padding-x);
   font-size: 1rem;
 }
 
 .c-btn.c-btn-round {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: var(--c-btn-round-padding-x);
+  padding-right: var(--c-btn-round-padding-x);
   border-radius: 2rem;
 }
 
