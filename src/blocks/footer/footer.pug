@@ -3,15 +3,15 @@ mixin footer
     .footer-wrapper
       .container
         .row.align-items-end
-          .col-md-4.col-sm-12.text-sm-center.text-md-left.pr-md-0
+          .col-md-4.col-sm-12.text-sm-center.text-md-left.px-md-0
             .mb-3
-              +logo({ type: "conax", width: 110 })
+              +logo({ type: "conax", width: 110 }).mx-sm-0.mx-auto
             a(href="#").c-btn.c-btn-round.c-btn-animated Request Demo ConAx
           .col-md-5.col-sm-12.pt-4
             .row
               .col-6
                 div.text-sm-right.text-md-left
-                  a(href="#").footer-link About ConAx
+                  a(href="/about.html").footer-link About ConAx
                 div.text-sm-right.text-md-left
                   a(href="#").footer-link Privacy Policy
               .col-6
