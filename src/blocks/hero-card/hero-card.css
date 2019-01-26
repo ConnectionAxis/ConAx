@@ -8,6 +8,20 @@
 	}
 }
 
+@media (min-width: 769px) {
+	.hero-card .conax-caption {
+		font-size: 2.5rem;
+	}
+}
+
+.hero-card {
+	position: relative;
+}
+
+.hero-card .conax-caption {
+	font-size: 1.9rem;
+}
+
 .hero-card_image img {
 	display: block;
 }

@@ -2,7 +2,8 @@
   --social-padding: 0.5rem;
   --social-dimension: 42px;
   --social-dimension--scale: 46px;
-  --social-color: #75880d;
+  --social-color: var(--alto);
+  --social-color--footer: var(--white);
 }
 
 .social {
@@ -25,6 +26,10 @@ svg.social-icon {
 
   width: var(--social-dimension);
   height: var(--social-dimension);
+}
+
+.footer svg.social-icon {
+  fill: var(--social-color--footer);
 }
 
 .social-vertical .social-item {

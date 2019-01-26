@@ -1,3 +1,12 @@
 .conax-logo svg {
 	fill: var(--conax-blue);
 }
+
+@media (min-width: 768px) {
+	.conax-logo-float {
+		position: absolute;
+	}
+
+	.conax-logo-float--t { top: 0; }
+	.conax-logo-float--l { left: 0; }
+}
