@@ -8546,6 +8546,9 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 768px) {
+  .w-md-auto {
+    width: auto !important;
+  }
   .m-md-0 {
     margin: 0 !important;
   }
