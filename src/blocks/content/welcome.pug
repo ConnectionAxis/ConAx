@@ -1,5 +1,5 @@
 mixin welcome(params)
-	+nav-panel#nav-panel-float.nav-panel--float.hide
+	+nav-panel({ page: "welcome" })#nav-panel-float.nav-panel--float.hide
 	+screen({ slideIndex: true }).screen-border--bottom.bg-gray-1.d-flex.align-items-center
 		.hero-card.container.align-items-center.py-4
 			.hero-card_image.hero-card_item.px-2
@@ -42,7 +42,7 @@ mixin welcome(params)
 					h4.h3.font-600.text-curious-blue.mb-4 ConAx is Mission-oriented and Impact-focused solution for Private and Institutional stakeholders
 					p.mb-4 Analytics from your activities and targeting at tools across your project minimize your mistake – and multiplies your right decisions. Make data-driven decisions at all project stages and levels of cooperation.
 					p.text-sm-center.text-md-left.pt-md-2
-						a(href="#").c-btn.c-btn-round.c-btn-animated.mb-4 Discover ConAx Tool
+						a(href="participation.html").c-btn.c-btn-round.c-btn-animated.mb-4 Discover ConAx Tool
 				.hero-card_image.hero-card_item.hero-card_image--stretch.px-2
 					img(src="images/participation.png").mx-auto.d-block
 	+footer
