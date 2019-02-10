@@ -39,7 +39,7 @@ function scrollTo(node, index, ...args) {
 
 function onScroll(e) {
 	const top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-	const slideHeight = slides[0].offsetHeight;
+	const slideHeight = (slides.length > 0) ? slides[0].offsetHeight : document.documentElement.clientHeight;
 	const toTop = document.getElementById("scroll-to-top");
   const social = document.getElementById("social-float");
 	const nav = document.getElementById("nav-panel-float");

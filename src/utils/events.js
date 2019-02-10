@@ -6,10 +6,10 @@ export function addListener(node, name, ...args) {
   } else {
     [fn, options] = args;
   }
-
-  node.addEventListener(
-    name,
-    delegateSelector ? e => e.target.matches(delegateSelector) && fn(e) : fn,
-    options,
-  );
+  if (node)
+    node.addEventListener(
+      name,
+      delegateSelector ? e => e.target.matches(delegateSelector) && fn(e) : fn,
+      options,
+    );
 }
