@@ -1,2 +1,2 @@
 # ConAx
-ConAx is a cloud-based communication platform for R&amp;D open- source projects, implemented on data-driven science principles.
+ConAx is a communicative platform to stack and share multi-modal research data. It’s a service for transformation and structural reconciliation of open research frameworks to create R&D and R&I projects. 
