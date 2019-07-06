@@ -27,10 +27,10 @@
 .scroll-to-top-action {
   display: block;
   position: fixed;
-  right: 10px;
-  bottom: 10px;
-  width: 30px;
-  height: 30px;
+  right: 15px;
+  bottom: 15px;
+  width: 40px;
+  height: 40px;
   border-radius: 30px;
   background-color: var(--curious-blue);
   background-repeat: no-repeat;
@@ -48,10 +48,10 @@
 
 .scroll-to-top-action > svg {
 	position: absolute;
-	width: 18px;
-	height: 18px;
-	top: 4px;
-	left: 6px;
+	width: 24px;
+	height: 24px;
+	top: 6px;
+	left: 8px;
 	fill: var(--white);
 }
 

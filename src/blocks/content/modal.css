@@ -1,0 +1,21 @@
+.modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.modal {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.modal.show {
+	display: block;
+}
+
+.modal .close {
+	outline: none;
+}
+
+.modal .hide {
+	display: none;
+	height: 0;
+}

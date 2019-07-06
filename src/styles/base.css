@@ -5,6 +5,7 @@
 	--curious-blue: #22aedf;
 	--conax-blue: #4695e7;
 	--rolling-stone: #70777c;
+
 	--silver: #c4c4c4;
 	--alto: #dbdbdb;
 	--alto-2: #8c9cad;
@@ -15,4 +16,11 @@
 html {
 	font-family: var(--font-serif);
 	font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

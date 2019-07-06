@@ -1,13 +1,12 @@
 mixin footer
-  footer.footer&attributes(attributes)
+  footer.footer.footer-dark&attributes(attributes)
     .footer-wrapper
-      .container
-        .row.align-items-end
-          .col-md-4.col-sm-12.text-sm-center.text-md-left.px-md-0
-            .mb-3
-              +logo({ type: "conax", width: 110 }).mx-sm-0.mx-auto
-            a(href="#").c-btn.c-btn-round.c-btn-animated Request Demo ConAx
-          .col-md-5.col-sm-12.pt-4
+      .container.pt-3
+        .row.align-items-start
+          .col-md-4.col-sm-12.text-sm-center.text-md-left
+            +logo({ type: "conax", width: 110 }).mx-sm-0.mx-auto
+            p.footer-copy.my-2 Copyright © 2019 ConAx
+          .col-md-5.col-sm-12
             .row
               .col-6
                 div.text-sm-right.text-md-left
@@ -19,8 +18,6 @@ mixin footer
                   a(href="#").footer-link Terms of Use
                 div
                   a(href="#").footer-link Contact Us
-          .col-md-3.col-sm-12.pt-4.pb-md-2
-            +social
-
-    .footer-copy.text-center.py-3
-      | Copyright © 2018 ConAx
+          .col-md-3.col-sm-12
+            p.text-sm-center.text-md-left.footer-link.mt-md-0.my-2.ml-md-2 Follow Us
+            +social.social-start.social-sm-center

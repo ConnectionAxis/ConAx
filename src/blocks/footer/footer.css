@@ -1,8 +1,15 @@
+.footer-dark {
+  background-color: #232a33;
+  color: var(--gray-1);
+}
+
+.footer-dark .conax-logo svg {
+  fill: #238fff;
+}
+
 .footer-wrapper {
   padding-top: 1.8rem;
   padding-bottom: 2rem;
-  background-color: var(--alto);
-  border-bottom: 2px solid var(--silver);
 }
 
 .footer-col {
@@ -24,7 +31,7 @@
   line-height: 1;
   font-weight: 600;
   text-decoration: none;
-  color: var(--rolling-stone);
+  color: var(--gray-1);
 }
 
 .footer-link + .footer-link {

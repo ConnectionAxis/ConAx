@@ -1,50 +1,53 @@
 mixin welcome(params)
 	+nav-panel({ page: "welcome" })#nav-panel-float.nav-panel--float.hide
-	+screen({ slideIndex: true }).screen-border--bottom.bg-gray-1.d-flex.align-items-center
+	+screen({ slideIndex: true }).bg-gradient.d-flex.align-items-center
 		.hero-card.container.align-items-center.py-4
 			.hero-card_image.hero-card_item.px-2
 				+logo({ type: "logo+text", width: 180 }).conax-logo-float.conax-logo-float--t.conax-logo-float--l.mb-4.mt-md-4.ml-md-4
-				h2.h1.conax-caption.font-700.text-curious-blue.mt-md-5.mx-sm-2 ConAx unify communication space and optimize digital landscape across your research activities to promote data-driven science toward innovation.
+				h2.h1.conax-caption.font-700.text-curious-blue.mt-md-5.mx-sm-2 Distributed networked research as a new model of transfer innovations.
+				h4.h3.text-curious-blue.mt-md-3.mx-sm-2 Create by ConAx new learning environments and agile innovation spaces as continuing innovations providers.
 			.hero-card_text.hero-card_item.py-4.px-2.pl-md-5
 				.row
 					.col-lg-6.offset-lg-3.col-md-8.offset-md-2.col-10.offset-1
 						+logo({ type: "large" }).mb-3
 				.mb-4
-					+slideIndex
+					//- +slideIndex
 				+sign-form
 				+social
 	.slides
-		+screen({ slideIndex: false })#slide-communication.slide.screen-border--bottom.bg-gray-1.d-flex.align-items-center
+		+screen({ slideIndex: false })#slide-communication.slide.bg-gray-1.d-flex.align-items-center
 			.hero-card.container.align-items-center.flex-sm-row-reverse.py-4
 				.hero-card_text.hero-card_item.px-2
-					h2.h2.text-uppercase.font-700.mt-md-5.mt-4.mb-4 Communication
-					h4.h3.font-600.text-curious-blue.mb-4 ConAx make a new creative network to promote Open Innovation on the Data-Driven Science principles
-					p.mb-2 ConAx connects the multi-modal data channels and third-party services to advanced computing facilities through powerful networking and research expertise.
-					p.mb-4 Integrates different levels of communication at all stages of the creation of scientific knowledge and promote research data content through open knowledge frameworks.
+					h2.h4.text-sm-center.text-md-left.font-700.mt-md-5.mt-4.mb-4 ConAx is a cloud-based service platform to stack and share multimodal research.
+					h4.h3.font-600.text-curious-blue.mb-4 Science, technology and innovations can form a single space through the structural integration of data-actors-infrastructure toward build research space as an ecosystem.
 					p.text-sm-center.text-md-left.pt-md-2
-						a(href="communication.html").c-btn.c-btn-round.c-btn-animated.mb-4 Discover ConAx Channels
+						a(href="communication.html" data-modal-content="conax-modal-1").c-js-modal.c-btn.c-btn-round.mb-4 Learn more structure and ecosystem
 				.hero-card_image.hero-card_item.hero-card_image--stretch.px-2
 					img(src="images/communication.png").mx-auto.d-block
-		+screen({ slideIndex: false })#slide-collaboration.slide.screen-border--bottom.bg-gray-1.d-flex.align-items-center
+		+screen({ slideIndex: false })#slide-collaboration.slide.bg-gray-1.d-flex.align-items-center
 			.hero-card.container.align-items-center.py-4
 				.hero-card_text.hero-card_item.px-2
-					h2.h2.text-uppercase.font-700.mt-md-5.mt-4.mb-4 Collaboration
-					h4.h3.font-600.text-curious-blue.mb-4 СonAx intensifies knowledge exchange toward Data-Driven Innovation by providing open knowledge networking
-					p.mb-4 Optimize connections/integrations and tools/activities structures through integration your multichannel communication and easier your way to collaboration. Unify Open Science Infrastructure as a tools for better collaboration, better data manipulation, reproduction and sharing.
+					h2.h4.text-sm-center.text-md-left.font-700.mt-md-5.mt-4.mb-4 Distributed networked research as a redesign model of R&D enable continuous innovation in the research workflow.
+					h4.h3.font-600.text-curious-blue.mb-4 ConAx convert R&D processes to open participating environment for academia, enterprises and startups to provide end-to-end research effect.
+
 					p.text-sm-center.text-md-left.pt-md-2
-						a(href="collaboration.html").c-btn.c-btn-round.c-btn-animated.mb-4 Discover Networking
+						a(href="collaboration.html" data-modal-content="conax-modal-2").c-js-modal.c-btn.c-btn-round.mb-4 Learn more opportunities
 				.hero-card_image.hero-card_item.hero-card_image--stretch.px-2
 					img(src="images/collaboration.png").mx-auto.d-block
-		+screen({ slideIndex: false })#slide-participation.slide.screen-border--bottom.bg-gray-1.d-flex.align-items-center
+		+screen({ slideIndex: false })#slide-participation.slide.bg-gray-1.d-flex.align-items-center
 			.hero-card.container.align-items-center.flex-sm-row-reverse.py-4
 				.hero-card_text.hero-card_item.px-2
-					h2.h2.text-uppercase.font-700.mt-md-5.mt-4.mb-4 Participation
-					h4.h3.font-600.text-curious-blue.mb-4 ConAx is Mission-oriented and Impact-focused solution for Private and Institutional stakeholders
-					p.mb-4 Analytics from your activities and targeting at tools across your project minimize your mistake – and multiplies your right decisions. Make data-driven decisions at all project stages and levels of cooperation.
+					h2.h4.text-sm-center.text-md-left.font-700.mt-md-5.mt-4.mb-4 This tool focused on three solutions that redefining structure of R&D to connections science and innovations
+					h4.h3.font-600.text-curious-blue.mb-4 ConAx solutions easier critical deployment-focused end-to-end processes such as project planning and design, evaluation and project development to lead successful R&D and R&I projects in dramatically less time.
 					p.text-sm-center.text-md-left.pt-md-2
-						a(href="participation.html").c-btn.c-btn-round.c-btn-animated.mb-4 Discover ConAx Tool
+						a(href="participation.html" data-modal-content="conax-modal-3").c-js-modal.c-btn.c-btn-round.mb-4 Discover solutions
 				.hero-card_image.hero-card_item.hero-card_image--stretch.px-2
 					img(src="images/participation.png").mx-auto.d-block
+		.bg-gray-1.text-center.py-4
+			p.h3.text-curious-blue Join the ConAx to start a native product introduction.
+			div.py-3
+				a(href="#").c-btn.c-btn-lg.c-btn-round.mb-4 Request Demo
 	+footer
 	+social#social-float.social-float.social-vertical.hide
 	+scrollToTop#scroll-to-top.hide
+	+modal

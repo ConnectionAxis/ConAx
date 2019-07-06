@@ -21,10 +21,30 @@ function wReady(e) {
 	);
   document.getElementById('scroll-to-top').addEventListener('click', onScrollToTop);
 	document.addEventListener('scroll', onScroll);
+
+	const mhandlers = Array.from(document.getElementsByClassName('c-js-modal'));
+	for ( let i in mhandlers ) {
+		mhandlers[i].addEventListener('click', (e) => { onModalOpen(mhandlers[i], e) });
+	}
+
+  document.getElementById('modal-close').addEventListener('click', onModalClose);
+
+  document.getElementById('conax-modal').addEventListener('click', (e) => {
+  	if( e.target !== modal && e.target !== modalDialog ) return;
+  	onModalClose();
+  });
+
+  // Remove webhost ads element
+	try {
+		document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode.remove();
+	} catch(e) {}
 }
 
 const doc = getDocument();
 const slides = Array.from(document.querySelectorAll('.slide'));
+const modal = document.getElementById('conax-modal');
+const modalDialog = modal.querySelector('.modal-dialog');
+const dBody = document.getElementsByTagName('body')[0];
 
 function onSlideNav(e) {
   const slide = document.querySelector(e.target.hash);
@@ -67,6 +87,25 @@ function onScroll(e) {
 			nav.classList.add("hide");
 		}
 	}
+}
+
+function onModalOpen(c, e) {
+	e.preventDefault();
+
+	modal.classList.add('show');
+	dBody.classList.add('modal-open');
+
+	document.getElementById(c.dataset.modalContent).classList.remove('hide');
+}
+
+function onModalClose() {
+	const mcontent = Array.from(document.getElementsByClassName('conax-modal'));
+	for ( let i in mcontent ) {
+		mcontent[i].classList.add('hide');
+	}
+
+	modal.classList.remove('show');
+	dBody.classList.remove('modal-open');
 }
 
 function onScrollToTop(e) {
