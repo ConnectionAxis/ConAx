@@ -4,12 +4,12 @@ mixin nav-panel(params)
 			.d-flex.align-items-center
 				.flex-fill
 					a(href="index.html")
-						+logo({ type: "logo+text", width: 130 }).d-md-inline-block.d-none
-						+logo({ type: "logo", width: 40 }).d-inline-block.d-md-none
+						+logo({ type: "logo+text", width: 130 }).d-md-inline-block.d-none.logo-white
+						+logo({ type: "logo", width: 40 }).d-inline-block.d-md-none.logo-white
 				.flex-fill.text-right
 					if params.page !== "about"
-						a(href="about.html").c-btn.c-btn-round.mr-2.mr-md-3 About
+						a(href="about.html").c-btn.c-btn-round.c-btn-inverse.mr-2.mr-md-3 About
 							span.d-none.d-sm-inline.pl-1 ConAx
-					a(href="#").c-btn.c-btn-round
+					a(href="https://connectionaxis.github.io/conax/" target="_blank").c-btn.c-btn-round.c-btn-inverse
 						span.d-none.d-sm-inline.pr-1 Request
 						| Demo ConAx

@@ -60,3 +60,13 @@ a.c-btn:hover {
   text-decoration: none;
   color: var(--white);
 }
+
+.c-btn.c-btn-inverse {
+  background-color: var(--white);
+  color: var(--curious-blue);
+}
+
+.c-btn.c-btn-inverse:hover {
+  color: var(--conax-blue) !important;
+  background-color: var(--white);
+}

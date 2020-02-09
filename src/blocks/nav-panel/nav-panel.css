@@ -1,7 +1,7 @@
 .nav-panel {
 	height: auto;
 	width: 100%;
-	background-color: var(--white);
+	background-color: var(--conax-blue);
 	opacity: 1;
 
   -webkit-transition: all 0.3s ease-in;
@@ -9,10 +9,6 @@
   -ms-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-
-  -webkit-box-shadow: 0px 5px 15px 5px rgba(115,166,255,1);
-	-moz-box-shadow: 0px 5px 15px 5px rgba(115,166,255,1);
-	box-shadow: 0px 5px 15px 5px rgba(115,166,255,1);
 }
 
 .nav-panel--fixed,
