@@ -1,6 +1,6 @@
 mixin welcome(params)
 	+nav-panel({ page: "welcome" })#nav-panel-float.nav-panel--float.hide
-	+screen({ slideIndex: true }).bg-gradient.d-flex.align-items-center
+	+screen({ slideIndex: true }).bg-gray-1.d-flex.align-items-center
 		.hero-card.container.align-items-center.py-4
 			.hero-card_image.hero-card_item.px-2
 				+logo({ type: "logo+text", width: 180 }).conax-logo-float.conax-logo-float--t.conax-logo-float--l.mb-4.mt-md-4.ml-md-4
@@ -14,8 +14,9 @@ mixin welcome(params)
 					//- +slideIndex
 				+sign-form
 				+social
+		+scrollDown#scroll-down
 	.slides
-		+screen({ slideIndex: false })#slide-communication.slide.bg-gray-1.d-flex.align-items-center
+		+screen({ slideIndex: false })#slide-communication.slide.bg-gray-1.d-flex.align-items-center.js-scroll-down
 			.hero-card.container.align-items-center.flex-sm-row-reverse.py-4
 				.hero-card_text.hero-card_item.px-2
 					h2.h4.text-sm-center.text-md-left.font-700.mt-md-5.mt-4.mb-4 ConAx is a cloud-based service platform to stack and share multimodal research.

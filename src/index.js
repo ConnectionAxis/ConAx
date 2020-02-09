@@ -20,6 +20,7 @@ function wReady(e) {
 	    e => (e.preventDefault(), onSignInputChange(e))
 	);
   document.getElementById('scroll-to-top').addEventListener('click', onScrollToTop);
+  document.getElementById('scroll-down').addEventListener('click', onScrollDown);
 	document.addEventListener('scroll', onScroll);
 
 	const mhandlers = Array.from(document.getElementsByClassName('c-js-modal'));
@@ -110,6 +111,12 @@ function onModalClose() {
 
 function onScrollToTop(e) {
 	scroll.top(doc, 0, { duration: 500 });
+}
+
+function onScrollDown(e) {
+	console.log('[onScrollDown]');
+	const el = document.getElementsByClassName("js-scroll-down")[0];
+	scrollTo(el, 0, { duration: 400 });
 }
 
 function onSignSubmit(e) {

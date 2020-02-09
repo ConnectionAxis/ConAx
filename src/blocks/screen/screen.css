@@ -76,3 +76,22 @@
 		left: 9px;
 	}
 }
+
+.scroll-down-action {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -16px;
+  bottom: 50px;
+  cursor: pointer;
+}
+
+.scroll-down-action > svg {
+  fill: var(--curious-blue);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 7px;
+  left: 9px;
+  transform: rotate(180deg);
+}
