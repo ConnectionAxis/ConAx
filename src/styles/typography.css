@@ -13,3 +13,16 @@
 .text-sm-right { text-align: right; }
 
 .p-l { font-size: 1.15rem; }
+
+.c-h1 { font-size: 1.9rem; }
+.c-h2 { font-size: 1.2rem; }
+
+@media (min-width: 769px) {
+	.c-h1 {
+		font-size: 2.6rem;
+		line-height: 1.1;
+	}
+	.c-h2 {
+		font-size: 1.8rem;
+	}
+}

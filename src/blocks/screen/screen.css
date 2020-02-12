@@ -59,6 +59,10 @@
   opacity: 0;
 }
 
+.nav-padding {
+  padding-top: 70px;
+}
+
 @media (min-width: 768px) {
   .scroll-to-top-action {
     right: 30px;
@@ -75,6 +79,10 @@
 		top: 7px;
 		left: 9px;
 	}
+
+  .nav-padding {
+    padding-top: 0;
+  }
 }
 
 .scroll-down-action {

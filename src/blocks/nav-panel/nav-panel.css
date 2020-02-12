@@ -21,6 +21,7 @@
 .nav-panel.hide {
 	height: 0;
 	opacity: 0;
+	overflow: hidden;
 }
 
 .nav-panel .c-btn {

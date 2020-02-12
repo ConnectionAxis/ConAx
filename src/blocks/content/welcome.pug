@@ -4,8 +4,10 @@ mixin welcome(params)
 		.hero-card.container.align-items-center.py-4
 			.hero-card_image.hero-card_item.px-2
 				+logo({ type: "logo+text", width: 180 }).conax-logo-float.conax-logo-float--t.conax-logo-float--l.mb-4.mt-md-4.ml-md-4
-				h2.h1.conax-caption.font-700.text-curious-blue.mt-md-5.mx-sm-2 Distributed networked research as a new model of transfer innovations.
-				h4.h3.conax-subtitle.text-gray.mt-md-3.mx-sm-2 Create by ConAx new learning environments and agile innovation spaces as continuing innovations providers.
+				h2.h1.conax-caption.font-700.text-curious-blue.mt-md-5.mx-sm-2
+					| Distributed networked research as a new model of transfer innovations.
+				h4.h3.conax-subtitle.text-gray.mt-md-3.mx-sm-2
+					| Create by ConAx new learning environments and agile innovation spaces as continuing innovations providers.
 			.hero-card_text.hero-card_item.py-4.px-2.pl-md-5
 				.row
 					.col-lg-6.offset-lg-3.col-md-8.offset-md-2.col-10.offset-1
@@ -17,33 +19,44 @@ mixin welcome(params)
 		+scrollDown#scroll-down
 	.slides
 		+screen({ slideIndex: false })#slide-communication.slide.bg-gray-1.d-flex.align-items-center.js-scroll-down
-			.hero-card.container.align-items-center.flex-sm-row-reverse.py-4
-				.hero-card_text.hero-card_item.px-2
-					h2.h4.text-sm-center.text-md-left.font-700.mt-md-5.mt-4.mb-4 ConAx is a cloud-based service platform to stack and share multimodal research.
-					h4.h3.font-600.text-curious-blue.mb-4 Science, technology and innovations can form a single space through the structural integration of data-actors-infrastructure toward build research space as an ecosystem.
-					p.text-sm-center.text-md-left.pt-md-2
-						a(href="communication.html" data-modal-content="conax-modal-1").c-js-modal.c-btn.c-btn-round.mb-4 Learn more structure and ecosystem
-				.hero-card_image.hero-card_item.hero-card_image--stretch.px-2
-					img(src="images/communication.png").mx-auto.d-block
+			.container.media.flex-column.justify-content-center
+				h2.h1.c-h1.text-center.font-700.text-curious-blue.mx-auto.pt-md-5.mb-md-5.mb-3.col-md-8.nav-padding
+					| ConAx is a cloud-based service platform to stack and share multimodal research.
+				.hero-card.container.align-items-strech.flex-sm-row-reverse.py-4
+					.hero-card_text.hero-card_item.px-2
+						h4.h3.c-h2.mb-4.text-gray
+							| Science, technology and innovations can form a single space through the structural integration of data-actors-infrastructure toward build research space as an ecosystem.
+						p.text-sm-center.text-md-left.pt-md-2
+							a(href="communication.html" data-modal-content="conax-modal-1").c-js-modal.c-btn.c-btn-round.mb-4
+							| Learn more structure and ecosystem
+					.hero-card_image.abs.hero-card_item.hero-card_image--stretch
+						img(src="images/communication.png").mx-auto.d-block.abs
 		+screen({ slideIndex: false })#slide-collaboration.slide.bg-gray-1.d-flex.align-items-center
-			.hero-card.container.align-items-center.py-4
-				.hero-card_text.hero-card_item.px-2
-					h2.h4.text-sm-center.text-md-left.font-700.mt-md-5.mt-4.mb-4 Distributed networked research as a redesign model of R&D enable continuous innovation in the research workflow.
-					h4.h3.font-600.text-curious-blue.mb-4 ConAx convert R&D processes to open participating environment for academia, enterprises and startups to provide end-to-end research effect.
-
-					p.text-sm-center.text-md-left.pt-md-2
-						a(href="collaboration.html" data-modal-content="conax-modal-2").c-js-modal.c-btn.c-btn-round.mb-4 Learn more opportunities
-				.hero-card_image.hero-card_item.hero-card_image--stretch.px-2
-					img(src="images/collaboration.png").mx-auto.d-block
+			.container.media.flex-column.justify-content-center
+				h2.h1.c-h1.text-center.font-700.text-curious-blue.mx-auto.pt-md-5.mb-md-5.mb-3.col-md-10.nav-padding
+					| Distributed networked research as a redesign model of R&D enable continuous innovation in the research workflow.
+				.hero-card.container.align-items-center.py-4
+					.hero-card_text.hero-card_item.px-2
+						h4.h3.c-h2.mb-4.text-gray
+							| ConAx convert R&D processes to open participating environment for academia, enterprises and startups to provide end-to-end research effect.
+						p.text-sm-center.text-md-left.pt-md-2
+							a(href="collaboration.html" data-modal-content="conax-modal-2").c-js-modal.c-btn.c-btn-round.mb-4
+							| Learn more opportunities
+					.hero-card_image.abs.hero-card_item.hero-card_image--stretch
+						img(src="images/collaboration.png").mx-auto.d-block.abs
 		+screen({ slideIndex: false })#slide-participation.slide.bg-gray-1.d-flex.align-items-center
-			.hero-card.container.align-items-center.flex-sm-row-reverse.py-4
-				.hero-card_text.hero-card_item.px-2
-					h2.h4.text-sm-center.text-md-left.font-700.mt-md-5.mt-4.mb-4 This tool focused on three solutions that redefining structure of R&D to connections science and innovations
-					h4.h3.font-600.text-curious-blue.mb-4 ConAx solutions easier critical deployment-focused end-to-end processes such as project planning and design, evaluation and project development to lead successful R&D and R&I projects in dramatically less time.
-					p.text-sm-center.text-md-left.pt-md-2
-						a(href="participation.html" data-modal-content="conax-modal-3").c-js-modal.c-btn.c-btn-round.mb-4 Discover solutions
-				.hero-card_image.hero-card_item.hero-card_image--stretch.px-2
-					img(src="images/participation.png").mx-auto.d-block
+			.container.media.flex-column.justify-content-center
+				h2.h1.c-h1.text-center.font-700.text-curious-blue.mx-auto.pt-md-5.mb-md-5.mb-3.col-md-10.nav-padding
+					| This tool focused on three solutions that redefining structure of R&D to connections science and innovations.
+				.hero-card.container.align-items-center.flex-sm-row-reverse.py-4
+					.hero-card_text.hero-card_item.px-2
+						h4.h3.c-h2.mb-4.text-gray
+							| ConAx solutions easier critical deployment-focused end-to-end processes such as project planning and design, evaluation and project development to lead successful R&D and R&I projects in dramatically less time.
+						p.text-sm-center.text-md-left.pt-md-2
+							a(href="participation.html" data-modal-content="conax-modal-3").c-js-modal.c-btn.c-btn-round.mb-4
+							| Discover solutions
+					.hero-card_image.abs.hero-card_item.hero-card_image--stretch
+						img(src="images/participation.png").mx-auto.d-block.abs
 		.bg-gray-1.text-center.py-4
 			p.h3.text-curious-blue Join the ConAx to start a native product introduction.
 			div.py-3
