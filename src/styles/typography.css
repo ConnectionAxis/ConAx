@@ -5,6 +5,7 @@
 
 .text-white { color: var(--white); }
 .text-silver { color: var(--silver); }
+.text-gray { color: var(--gray); }
 .text-curious-blue { color: var(--curious-blue); }
 .text-conax-blue { color: var(--conax-blue); }
 

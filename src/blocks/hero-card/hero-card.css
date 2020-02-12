@@ -10,7 +10,11 @@
 
 @media (min-width: 769px) {
 	.hero-card .conax-caption {
-		font-size: 2.5rem;
+		font-size: 2.6rem;
+		line-height: 1.1;
+	}
+	.hero-card .conax-subtitle {
+		font-size: 1.8rem;
 	}
 }
 
@@ -20,6 +24,10 @@
 
 .hero-card .conax-caption {
 	font-size: 1.9rem;
+}
+
+.hero-card .conax-subtitle {
+	font-size: 1.2rem;
 }
 
 .hero-card_image img {
